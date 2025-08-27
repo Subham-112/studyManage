@@ -104,7 +104,7 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-secondary/20 to-accent/10">
+    <div className="min-h-screen bg-background">
       {/* Header */}
       <header className="border-b bg-card/50 backdrop-blur-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
@@ -164,13 +164,13 @@ const Index = () => {
 
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-20 text-center">
-        <Badge className="mb-6 bg-primary/10 text-primary border-primary/20 hover-lift">
+        <Badge className="mb-6 bg-secondary text-foreground border-border hover-lift">
           🎉 Transform Your Educational Institution Today
         </Badge>
         
         <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
           Complete Education
-          <span className="block gradient-primary bg-clip-text text-transparent">
+          <span className="block text-primary">
             Management Solution
           </span>
         </h1>
@@ -201,7 +201,7 @@ const Index = () => {
             { number: "24/7", label: "Support Available" }
           ].map((stat, index) => (
             <div key={index} className="text-center">
-              <p className="text-2xl font-bold gradient-primary bg-clip-text text-transparent">{stat.number}</p>
+              <p className="text-2xl font-bold text-primary">{stat.number}</p>
               <p className="text-sm text-muted-foreground">{stat.label}</p>
             </div>
           ))}
